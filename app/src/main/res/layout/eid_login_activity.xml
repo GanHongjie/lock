@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/login_tint"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_login_edit"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_tint"
+            android:layout_width="match_parent"
+            android:text="已检测到Eid卡,可直接登录"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_phone_hint"
+                    android:textColor="#0E9B8F"
+                    android:textSize="13sp"/>
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:backgroundTint="@color/accentColor"
+                    android:hint="@string/login_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_lock" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/et_password"
+                android:text="无需输入密码"
+                android:textSize="18sp" />
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:passwordToggleEnabled="true">-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/et_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@null"-->
+            <!--android:backgroundTint="@color/accentColor"-->
+            <!--android:hint="@string/login_pass_tint"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="18sp" />-->
+
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="#ccc" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_login_button"
+        android:text="@string/login_button"
+        android:textColor="@color/blueWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_login_register"
+        android:text="@string/register_button"
+        android:textColor="@color/blueWhite"
+        android:textSize="18dp" />
+</LinearLayout>

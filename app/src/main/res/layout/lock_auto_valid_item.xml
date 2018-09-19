@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:id="@+id/ll_trash"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:tag="Bottom3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_auto_delete"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_trash"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_trash" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|top"
+                    android:text="用户名"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="授权类型："
+                        android:textColor="#666666"
+                        android:textSize="@dimen/text_msg_size" />
+
+                    <TextView
+                        android:id="@+id/tv_grand_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|top"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_valid_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="授权时间："
+                        android:textColor="#666666"
+                        android:textSize="@dimen/text_msg_size" />
+
+                    <TextView
+                        android:id="@+id/tv_auto_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2018/12/12~2018/12/12"
+                        android:textColor="#666666"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_surplusCount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="剩余次数"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_auto_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:text="25"
+                    android:textSize="25sp"
+                    android:textColor="#666666"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</com.daimajia.swipe.SwipeLayout>

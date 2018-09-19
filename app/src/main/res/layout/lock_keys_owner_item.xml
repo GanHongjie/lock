@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="155dp"
+    android:layout_below="@+id/linearLayout3"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    app:cardElevation="4dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/ll_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/backgroud_lock_card"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingStart="6dp">
+        <!--android:background="@drawable/bg_card_common"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_msg_dep"
+            android:textColor="@color/lockCardMsg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_depNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/card_msg_tip2"
+            android:textColor="@color/lockCardMsg"
+            android:textSize="16sp" />
+
+        <!--android:maxLines="1"-->
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

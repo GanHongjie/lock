@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size90">90px</dimen>
+    <dimen name="text_size18">20sp</dimen>
+
+    <dimen name="tool_bar_height">44dp</dimen>
+    <dimen name="tool_bar_top_height">54dp</dimen>
+    <dimen name="tool_bar_title_size">18sp</dimen>
+    <dimen name="text_msg_size">12sp</dimen>
+    <dimen name="text_msg_height">42dp</dimen>
+    <!--lock main-->
+    <dimen name="main_top_img_height">200dp</dimen>
+    <dimen name="fragment_main_lock_height">200dp</dimen>
+    <dimen name="text_keys_dep_size">18sp</dimen>
+    <dimen name="cardView_keys_height">150dp</dimen>
+    <dimen name="text_size_default">20sp</dimen>
+    <dimen name="button_progress_width">150dp</dimen>
+    <dimen name="button_progress_height">120dp</dimen>
+    <dimen name="button_complete_height">70dp</dimen>
+
+    <!--添加授权开锁人信息界面-->
+    <dimen name="text_lock_auto_size">15sp</dimen>
+    <dimen name="text_auto_msg_height">48dp</dimen>
+    <dimen name="main_textSize">10sp</dimen>
+
+
+</resources>

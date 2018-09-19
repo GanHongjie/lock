@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:background="#56a3d7">
+
+            <ImageView
+                android:id="@+id/vImageSetting"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_manger"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_authorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/author_main"
+                android:textColor="@color/shadowWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@color/okButton"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_authorCount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="3"-->
+                <!--android:textColor="@color/shadowWhite"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="5dp"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="位用户正在使用钥匙"-->
+                <!--android:textColor="@color/shadowWhite"-->
+                <!--android:textSize="14sp"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#56a3d7">
+            <TextView
+                android:id="@+id/vTextAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="--"
+                android:textColor="@color/shadowWhite"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <com.yiyun.lockcontroller.view.segment_tab_layout.SegmentTabLayout
+                    android:id="@+id/stl_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_horizontal"
+                    tl:tl_indicator_anim_enable="true"
+                    tl:tl_indicator_bounce_enable="false"
+                    tl:tl_indicator_color="#56a3d7"
+                    tl:tl_tab_padding="10dp" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_autoLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_addAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#2EA2DB"
+                android:src="@drawable/ic_pencil"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

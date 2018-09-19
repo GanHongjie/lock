@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/button1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开锁授权" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询所有授权信息" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的所有钥匙" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <com.yiyun.lockcontroller.view.ripple_button.RippleDiffuse
+        android:id="@+id/rd_button"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:btn_img_res="@drawable/ic_lock_close"
+        app:ripple_img_res="@color/okButton">
+    </com.yiyun.lockcontroller.view.ripple_button.RippleDiffuse>
+
+</LinearLayout>

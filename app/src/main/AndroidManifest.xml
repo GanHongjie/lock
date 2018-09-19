@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yiyun.lockcontroller">
+
+    <!-- OMA权限 -->
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于写入缓存数据到扩展存储卡 Dangerous Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 扫码权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.yiyun.lockcontroller.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_lock"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_lock"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.yiyun.lockcontroller.ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.yiyun.lockcontroller.net.NetworkStateReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="NETWORK_STATE_CHECK" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.yiyun.lockcontroller.ui.login.LoginActivity" />
+        <activity android:name="com.yiyun.lockcontroller.ui.login.RegisterActivity" />
+        <!-- <activity android:name=".ui.TestActivity" /> -->
+        <activity android:name="com.yiyun.lockcontroller.ui.auto.AutoAddActivity" />
+        <activity android:name="com.yiyun.lockcontroller.ui.MainActivity" />
+        <activity android:name="com.yiyun.lockcontroller.ui.lock.OpenLogActivity" />
+        <activity android:name="com.yiyun.lockcontroller.ui.UserCenterActivity"/>
+        <activity android:name="com.yiyun.lockcontroller.ui.lock.MyKeysActivity"/>
+        <activity android:name="com.yiyun.lockcontroller.ui.auto.MyQrCodeActivity"/>
+
+        <activity
+            android:name="com.yzq.zxinglibrary.android.CaptureActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ZxingTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <service android:name="com.yiyun.lockcontroller.utils.bluetooth.BluetoothLeClass" />
+
+    </application>
+
+</manifest>

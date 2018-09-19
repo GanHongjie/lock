@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/bg_lock_top_dian">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/vImageBack"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_lock_main_back" />
+
+            <ImageView
+                android:id="@+id/vImageUser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_user" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            app:cardElevation="4dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/ll_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/backgroud_lock_card"
+                android:gravity="center|start"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingStart="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_msg_dep"
+                    android:textColor="@color/lockCardMsg"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_lockDep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/card_msg_tip2"
+                    android:textColor="@color/textOrange"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_msg_state"
+                    android:textColor="@color/lockCardMsg"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_lockMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/card_msg_tip2"
+                    android:textColor="@color/textOrange"
+                    android:textSize="16sp" />
+                <!--android:textColor="@color/lockCardMsg"-->
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_margin="3dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:textColor="#333333"-->
+                    <!--android:text="连接状态:" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_state"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:textColor="@color/textOrange"-->
+                    <!--android:text="&#45;&#45;" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#333333"
+                    android:text="电量:" />
+
+                <TextView
+                    android:id="@+id/tv_elect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="@color/textOrange"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_msg_tip1"
+                android:textColor="#333333"
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+
+        <com.yiyun.lockcontroller.view.ripple_button.CircleImageView
+            android:id="@+id/rd_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_lock_close_gray" />
+
+        <!--<com.example.layo.lockplat.view.ripple_button.RippleDiffuse-->
+            <!--android:id="@+id/rd_button"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--app:btn_img_res="@mipmap/icon_lock_close_gray"-->
+            <!--app:ripple_img_res="@color/okButton" />-->
+        <!--app:btn_img_res="@drawable/ic_lock_close"-->
+
+    </LinearLayout>
+
+</LinearLayout>

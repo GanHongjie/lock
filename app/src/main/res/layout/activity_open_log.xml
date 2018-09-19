@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#56A3D7">
+
+        <ImageView
+            android:id="@+id/vImageBack"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_lock_main_back" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开锁记录"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/historyListHead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:gravity="start|center_vertical"
+            android:text="开锁账户" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="end|center_vertical"
+            android:text="开锁时间" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_openLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

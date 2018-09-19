@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">守户者</string>
+    <!--activity-->
+    <string name="loading_title">请稍候</string>
+    <string name="author_main">授权管理</string>
+    <string name="lock_main">手机开门</string>
+    <string name="defend_main">云卫一号</string>
+
+    <!--lock-->
+    <string name="item_foot_load">正在加载中…</string>
+    <string name="item_bottom_load">--已到最底--</string>
+    <!--replace-->
+    <string name="replace_remark_hint">请输入申请原因</string>
+    <string name="replace_request_cancel">请求已取消</string>
+    <string name="replace_request_unAudit">请求未审核</string>
+    <string name="replace_request_success">请求审核通过</string>
+    <string name="replace_request_fail">请求审核未通过</string>
+    <string name="replace_flowColor_success">#009999</string>
+    <string name="replace_flowColor_fail">#FF0000</string>
+    <!--repair-->
+    <string name="repair_remark_hint">请输入报修原因</string>
+    <string name="repair_request_cancel">报修已取消</string>
+    <string name="repair_request_unAudit">报修未受理</string>
+    <string name="repair_request_success">报修已受理</string>
+    <string name="repair_request_fail">报修请求失效处理</string>
+
+    <string name="lock_fragment_tip1">连接蓝牙门锁</string>
+    <string name="lock_fragment_lock1_search">连接蓝牙门锁</string>
+    <string name="lock_fragment_lock1_state">蓝牙连接状态</string>
+    <string name="lock_fragment_lock1_state_success">蓝牙已搜索到</string>
+    <string name="lock_fragment_lock1_state_fail">蓝牙未找到</string>
+    <string name="lock_fragment_lock1_state_fail_toast">未搜索到蓝牙，请重试</string>
+    <string name="lock_fragment_lock2_open">点击开锁</string>
+    <string name="lock_fragment_lock2_open_success">开锁成功</string>
+    <string name="lock_fragment_lock2_open_error">开锁失败</string>
+    <string name="lock_fragment_lock2_open_fail">开锁失败请重试</string>
+    <string name="lock_fragment_lock2_open_powerless">此用户暂无开锁权限</string>
+
+    <!--锁控功能选项-->
+
+    <string name="lock_main_authorHint">位用户正在使用钥匙</string>
+    <string name="lock_main_openLog">开锁历史</string>
+    <string name="lock_main_search_ble">查找门锁</string>
+    <string name="lock_main_keys">我的钥匙</string>
+
+    <!--添加授权开锁人信息界面-->
+    <string name="lock_auto_add_time">时间段授权</string>
+    <string name="lock_auto_add_conunt">次数授权</string>
+    <string name="lock_auto_add_time_count">时间段与次数授权</string>
+    <string name="lock_auto_add_stuNo">被授权人账号</string>
+    <string name="lock_auto_add_selectKey">选择钥匙</string>
+    <string name="lock_auto_add_startTime">起始时间</string>
+    <string name="lock_auto_add_endTime">结束时间</string>
+    <string name="lock_auto_add_allowCount">允许开锁次数</string>
+    <string name="lock_auto_add_default">请选择></string>
+    <string name="lock_auto_give">给予权限</string>
+
+    <!--登录注册部分-->
+    <string name="login_warning">信息输入有误</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_err0">登录失败</string>
+    <string name="login_err1">手机号码输入不正确</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_err0">信息认证错误</string>
+    <string name="register_err2">姓名不能为空</string>
+    <string name="register_err3">身份证号码输入不正确</string>
+    <string name="register_err4">两次密码输入不一致</string>
+    <string name="login_button">一键登录</string>
+    <string name="register_button">注册</string>
+    <string name="login_tint">登录</string>
+    <string name="login_phone_hint">请输入手机号码</string>
+    <string name="login_pass_hint">请输入密码</string>
+    <string name="register_hint">注册</string>
+    <string name="register_ok">完成</string>
+    <string name="register_return"><![CDATA[< 返回]]></string>
+    <string name="lock_phone_hint">请输入授权人的电话号码</string>
+
+    <string name="card_msg_dep">门牌号</string>
+    <string name="card_msg_state">使用情况</string>
+    <string name="card_msg_tip1">等待连接</string>
+    <string name="card_msg_tip2">未找到门锁</string>
+
+
+</resources>

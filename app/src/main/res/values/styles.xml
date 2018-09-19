@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#3498db</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="LoadDialogTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme" />
+
+    <style name="AutoExpandTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLength">2</item>
+    </style>
+
+    <style name="AutoCollapsedTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLength">2</item>
+    </style>
+
+    <style name="MyDialog">
+        <item name="android:windowBackground">@color/toolBarColor</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="sDialogWaiting" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

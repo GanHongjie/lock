@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#56A3D7">
+
+        <ImageView
+            android:id="@+id/vImageBack"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_lock_main_back" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加授权"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:background="@color/blueWhite">
+
+        <ImageView
+            android:id="@+id/vImageMyQrCode"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_login_head"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="被授权人的用户名"
+                    android:textColor="@color/testMsgColor"
+                    android:textSize="@dimen/text_lock_auto_size" />
+
+                <TextView
+                    android:id="@+id/et_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:textSize="@dimen/text_lock_auto_size"
+                    android:textColor="@color/testSelectMsgColor"
+                    android:gravity="right"/>
+
+                <ImageView
+                    android:id="@+id/vImageScanQrCode"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/scan_qr_code"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_auto_msg_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="@string/lock_auto_add_selectKey"
+                android:textColor="@color/testMsgColor"
+                android:textSize="@dimen/text_lock_auto_size" />
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginLeft="70dp"
+                android:text="@string/lock_auto_add_default"
+                android:textColor="@color/testSelectMsgColor"
+                android:textSize="@dimen/text_lock_auto_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_startTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_auto_msg_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="@string/lock_auto_add_startTime"
+                    android:textColor="@color/testMsgColor"
+                    android:textSize="@dimen/text_lock_auto_size" />
+
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:text="@string/lock_auto_add_default"
+                    android:textColor="@color/testSelectMsgColor"
+                    android:textSize="@dimen/text_lock_auto_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_endTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_auto_msg_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="@string/lock_auto_add_endTime"
+                    android:textColor="@color/testMsgColor"
+                    android:textSize="@dimen/text_lock_auto_size" />
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:text="@string/lock_auto_add_default"
+                    android:textColor="@color/testSelectMsgColor"
+                    android:textSize="@dimen/text_lock_auto_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_allday"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="共" />
+
+                <TextView
+                    android:id="@+id/tv_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="天" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_auto_msg_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="@string/lock_auto_add_allowCount"
+                android:textColor="@color/testMsgColor"
+                android:textSize="@dimen/text_lock_auto_size" />
+
+            <EditText
+                android:id="@+id/et_allowTimes"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/tv_allowTimeHint"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_allowTimeHint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="次"
+                android:textColor="@color/testSelectMsgColor"
+                android:textSize="@dimen/text_lock_auto_size" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_auto_button"
+        android:text="@string/lock_auto_give"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>

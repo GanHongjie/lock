@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="shadowWhite">#fafafa</color>
+    <color name="blueWhite">#d0e5f2</color>
+
+    <color name="lockCardMsg">#E4E4E4</color>
+    <!--lock tint-->
+    <color name="toolBarColor">#2EA2DB</color>
+    <color name="toolBarTvBigColor">#fff</color>
+    <color name="toolBarTvSmallColor">#fff</color>
+    <color name="textViewMsgColor">#222</color>
+    <color name="colorSegmentTabLayout">#67bdcc</color>
+    <color name="transparentGray">#99000000</color>
+    <!--drop down-->
+    <color name="dDVTransparentGray">#99000000</color>
+    <color name="dropDownContainerColor">#2EA2DB</color>
+    <color name="dropDownSelectedColor">#3F51B5</color>
+    <color name="dDVColorPrimary">@color/colorPrimary</color>
+    <color name="accentColor">#4899cd</color>
+
+    <!-- text msg -->
+    <!--<color name="okButton">#56a3d7</color>-->
+    <color name="okButton">#C1C5C8</color>
+    <color name="testMsgColor">#999999</color>
+    <color name="testSelectMsgColor">#56a3d7</color>
+    <color name="textOrange">#FF9727</color>
+    <color name="dialogBackground">#555555</color>
+
+</resources>
