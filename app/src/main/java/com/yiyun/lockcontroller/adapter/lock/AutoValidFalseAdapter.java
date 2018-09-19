@@ -20,7 +20,7 @@ import java.util.List;
  * Created by Layo on 2017-8-2.
  */
 
-public class AutoValidFalseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
+public class  AutoValidFalseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
     private Context mContext;
     private List<AuthorizeLogBean> list;
     private static final int TYPE_ITEM = 0;

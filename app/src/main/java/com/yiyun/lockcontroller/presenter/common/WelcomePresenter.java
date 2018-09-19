@@ -126,7 +126,7 @@ public class WelcomePresenter extends BaseMvpPresenter<WelcomeContract.View> imp
      * 检测有没有同时完成所有准备任务，都完成后调用跳转
      */
     private void taskComplete() {
-        if (isFoundComplete & isVersionComplete & isPkiComplete)
+       // if (isFoundComplete & isVersionComplete & isPkiComplete)
             getView().eidIsComplete();
     }
 }

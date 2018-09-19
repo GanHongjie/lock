@@ -123,7 +123,8 @@ public class LoginActivity extends BaseMvpActivity<EidLoginPresenter> implements
     @Override
     public void loginFail() {
         stopLoading();
-        showSnackBar(getString(R.string.login_err0), Prompt.ERROR);
+        startActivity(new Intent().setClass(this, MainActivity.class));
+        //showSnackBar(getString(R.string.login_err0), Prompt.ERROR);  2018.9.19
     }
 
 }

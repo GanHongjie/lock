@@ -90,5 +90,5 @@ public class App extends Application {
             }
         }
         activityStack.clear();
-    }
+     }
 }

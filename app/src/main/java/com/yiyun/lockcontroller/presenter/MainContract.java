@@ -12,7 +12,6 @@ public interface MainContract {
     interface View extends BaseView {
 //        //查询成功
 //        void searchSuccess(List<LockKeysBean> logBeans);
-
     }
 
     interface Presenter extends BasePresenter {

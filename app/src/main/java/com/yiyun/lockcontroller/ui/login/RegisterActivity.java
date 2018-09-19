@@ -24,8 +24,7 @@ import java.util.regex.Pattern;
 
 public class RegisterActivity extends BaseMvpActivity<EidRegisterContract.Presenter> implements EidRegisterContract.View {
 
-    private static final boolean DEBUG = false && App.DEBUG;
-
+    private static final boolean DEBUG = false;
     private TextView tvReturn;
     private EditText etUsername;
     private EditText etPhone;
@@ -43,7 +42,6 @@ public class RegisterActivity extends BaseMvpActivity<EidRegisterContract.Presen
     protected void create(Bundle savedInstanceState) {
         setContentView(R.layout.eid_register_activity);
         initFindId();
-
     }
 
     private void old() {
@@ -87,7 +85,7 @@ public class RegisterActivity extends BaseMvpActivity<EidRegisterContract.Presen
         btOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!judgeFormat())
+                if (!judgeFormat())   //判断输入的格式是否正确
                     return;
 
 //                boolean isOMAFound = SPUtil.getInstance().getBoolean(IS_OMA);
@@ -98,7 +96,6 @@ public class RegisterActivity extends BaseMvpActivity<EidRegisterContract.Presen
                 String username = etUsername.getText().toString();
                 String idCard = etIdCard.getText().toString();
                 RegisterMsgBean msgBean = new RegisterMsgBean(phoneNo, "123", username, idCard);
-
                 mPresenter.register(getApplicationContext(), msgBean, isOMAFound);
             }
         });

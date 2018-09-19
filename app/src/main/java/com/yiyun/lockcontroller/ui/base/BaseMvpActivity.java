@@ -20,7 +20,7 @@ import com.trycatch.mysnackbar.TSnackbar;
  */
 
 public abstract class BaseMvpActivity<T extends BasePresenter> extends
-        AppCompatActivity implements BaseView{
+        AppCompatActivity implements BaseView {
     protected T mPresenter;
     //    protected ProgressDialog progressDialog = null;
     protected Dialog dialog;

@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.yiyun.lockcontroller"
         minSdkVersion 18
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -82,10 +82,10 @@ dependencies {
     //    implementation files('libs/org.simalliance.openmobileapi-v1.7.0_79.jar')
 
     //    implementation 'com.google.android.gms:play-services-maps:11.8.0'
-    compile files('libs/sun.misc.BASE64Decoder.jar')
-    compile files('libs/org.simalliance.openmobileapi-v1.7.0_79.jar')
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+    implementation files('libs/org.simalliance.openmobileapi-v1.7.0_79.jar')
     implementation files('libs/SIMeID-SDK For Android-3.0.13.2-beta-2017-1122.jar')
-    compile project(':zxinglibrary')
+    implementation project(':zxinglibrary')
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'junit:junit:4.12'
